@@ -1,0 +1,5 @@
+wwd.app_entity_user.title: User
+wwd.app_entity_user.title_plural: User
+wwd.app_entity_user.block.base: Base
+wwd.app_entity_user.property.email: email
+wwd.app_entity_user.property.password: password

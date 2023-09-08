@@ -20,6 +20,9 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+        dql:
+            string_functions:
+                MATCH_AGAINST: araise\SearchBundle\Extension\Doctrine\Query\Mysql\MatchAgainst
 
 when@test:
     doctrine:

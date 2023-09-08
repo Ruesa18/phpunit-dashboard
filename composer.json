@@ -7,6 +7,10 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "araise/core-bundle": "^1.0",
+        "araise/crud-bundle": "^1.0",
+        "araise/search-bundle": "^3.0",
+        "araise/table-bundle": "^1.0",
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.16",
@@ -90,6 +94,7 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "6.3.*",
         "symfony/css-selector": "6.3.*",
