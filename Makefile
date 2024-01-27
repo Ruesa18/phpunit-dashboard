@@ -1,5 +1,7 @@
+.PHONY: help
+
 help:
-	echo "===HELP==="
+	@LC_ALL=C $(MAKE) -pRrq -f $(firstword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/(^|\n)# Files(\n|$$)/,/(^|\n)# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | grep -E -v -e '^[^[:alnum:]]' -e '^$@$$'
 
 install:
 	composer install
@@ -27,7 +29,10 @@ db_test:
 encore:
 	yarn encore dev
 
-phpunit:
+test:
 	make db_test
-	bin/phpunit
+	make phpunit
+
+phpunit:
+	bin/phpunit --log-junit var/phpunit_output/report.xml
 

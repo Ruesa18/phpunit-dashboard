@@ -4,13 +4,14 @@ services:
     web:
         container_name: phpunit_dashboard
         build:
-            context: "." # Build directory
-            target: dev # Build stage
+            context: "."
+            target: dev
             args:
-                DDE_UID: ${DDE_UID} # Pass your UID (DDE_UID is set automatically)
-                DDE_GID: ${DDE_GID} # Pass your GID (DDE_GID is set automatically)s
+                DDE_UID: ${DDE_UID}
+                DDE_GID: ${DDE_GID}
         volumes:
             - ./:/var/www
+            #- ./var/phpunit_output:/var/www/var/phpunit_output
         environment:
             - VIRTUAL_HOST=phpunit.test
             - OPEN_URL=http://phpunit.test/
