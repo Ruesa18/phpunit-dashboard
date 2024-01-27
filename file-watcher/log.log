@@ -1,0 +1,64 @@
+File was modified...
+object(ReportDto)#6 (7) {
+  ["testCount"]=>
+  int(2)
+  ["assertionCount"]=>
+  int(2)
+  ["errorCount"]=>
+  int(0)
+  ["warningCount"]=>
+  int(0)
+  ["failureCount"]=>
+  int(0)
+  ["skipCount"]=>
+  int(0)
+  ["time"]=>
+  float(0.365858)
+}
+File was modified...
+object(ReportDto)#6 (7) {
+  ["testCount"]=>
+  int(2)
+  ["assertionCount"]=>
+  int(2)
+  ["errorCount"]=>
+  int(0)
+  ["warningCount"]=>
+  int(0)
+  ["failureCount"]=>
+  int(0)
+  ["skipCount"]=>
+  int(0)
+  ["time"]=>
+  float(0.365858)
+}
+File was modified...
+object(ReportDto)#6 (7) {
+  ["testCount"]=>
+  int(2)
+  ["assertionCount"]=>
+  int(2)
+  ["errorCount"]=>
+  int(0)
+  ["warningCount"]=>
+  int(0)
+  ["failureCount"]=>
+  int(0)
+  ["skipCount"]=>
+  int(0)
+  ["time"]=>
+  float(0.365858)
+}
+Configured BACKEND_URL: "http://localhost/api/report"
+Configured BACKEND_URL: "http://localhost/api/report"
+Configured BACKEND_URL: "http://localhost/api/report"
+Configured BACKEND_URL: "http://localhost/api/report"
+Configured BACKEND_URL: "http://localhost/api/report"
+File was modified...
+File was modified...
+File was modified...
+File was modified...
+File was modified...
+File was modified...
+File was modified...
+File was modified...

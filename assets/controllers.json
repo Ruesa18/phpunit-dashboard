@@ -9,6 +9,10 @@
                 "enabled": true,
                 "fetch": "eager"
             },
+            "input-mask": {
+                "enabled": true,
+                "fetch": "lazy"
+            },
             "dropdown": {
                 "enabled": true,
                 "fetch": "eager"
@@ -66,6 +70,10 @@
         },
         "@araise/table-bundle": {
             "table": {
+                "enabled": true,
+                "fetch": "eager"
+            },
+            "exporter": {
                 "enabled": true,
                 "fetch": "eager"
             },
