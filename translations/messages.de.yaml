@@ -57,3 +57,4 @@ wwd.app_entity_testsuite.property.skipCount: Anzahl Skips
 wwd.app_entity_testsuite.property.time: Zeit
 wwd.app_entity_testsuite.property.testClasses: Test Classes
 menu.baseData: Grunddaten
+dashboard.reports: Reports

@@ -2,9 +2,9 @@ araise_crud_bundle:
     resource: "@araiseCrudBundle/Resources/config/routing.yml"
     prefix: /
 
-dashboard:
-    path: /
+araise_crud_dashboard:
+    path: /dashboard
     controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
     defaults:
-        path: /dashboard
+        path: /
         permanent: true
