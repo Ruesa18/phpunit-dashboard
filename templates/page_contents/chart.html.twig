@@ -1,0 +1,5 @@
+{% extends 'page_contents/page_content.html.twig' %}
+
+{% block additional %}
+	{{ render_chart(options.chart, {'class': 'page-content-chart'}) }}
+{% endblock %}

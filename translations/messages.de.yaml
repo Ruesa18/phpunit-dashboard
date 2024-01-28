@@ -1,8 +1,7 @@
-wwd.app_entity_user.title: Benutzer
-wwd.app_entity_user.title_plural: Benutzer
-wwd.app_entity_user.block.base: Info
-wwd.app_entity_user.property.email: Email
-wwd.app_entity_user.property.password: Passwort
+menu.baseData: Grunddaten
+dashboard.reports: Reports
+dashboard.last_reports_state_chart: Vergleich der letzten Reports
+
 wwd.app_entity_report.title: Report
 wwd.app_entity_report.title_plural: Reports
 wwd.app_entity_report.block.base: Grunddaten
@@ -56,5 +55,3 @@ wwd.app_entity_testsuite.property.failureCount: Anzahl Failures
 wwd.app_entity_testsuite.property.skipCount: Anzahl Skips
 wwd.app_entity_testsuite.property.time: Zeit
 wwd.app_entity_testsuite.property.testClasses: Test Classes
-menu.baseData: Grunddaten
-dashboard.reports: Reports

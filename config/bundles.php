@@ -22,4 +22,5 @@ return [
     araise\TableBundle\araiseTableBundle::class => ['all' => true],
     araise\CrudBundle\araiseCrudBundle::class => ['all' => true],
     Zenstruck\Foundry\ZenstruckFoundryBundle::class => ['dev' => true, 'test' => true],
+    Symfony\UX\Chartjs\ChartjsBundle::class => ['all' => true],
 ];

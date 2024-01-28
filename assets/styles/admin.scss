@@ -4,3 +4,30 @@
 
 @import "~@araise/core-bundle/styles/_tailwind.scss";
 @import "~@araise/table-bundle/styles/_tailwind.scss";
+
+.dashboard-small {
+	width: 25%;
+}
+
+.dashboard-middle {
+	width: 50%;
+}
+
+.dashboard-large {
+	width: 100%;
+}
+
+#page-content-container {
+	width: 100%;
+	display: flex;
+
+	.page-content {
+		display: flex;
+		flex-direction: column;
+
+		.page-content-chart {
+			width: 100% !important;
+			height: auto !important;
+		}
+	}
+}

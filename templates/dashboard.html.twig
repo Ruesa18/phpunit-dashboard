@@ -3,6 +3,10 @@
 
 {% block dashboard_paragraph %}
 
-	Diagrams here...
+	<div id="page-content-container">
+		{% for index,content in pageContents %}
+			{{ render_page_content(content) }}
+		{% endfor %}
+	</div>
 
 {% endblock %}
