@@ -6,35 +6,34 @@ use App\Dto\ReportDto;
 use App\Manager\ReportManager;
 use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Serializer\Encoder\JsonEncoder;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\Serializer;
 
 #[Route('/api')]
 class ReportApiController extends AbstractController
 {
 	public const ROUTE_CREATE_REPORT = 'app_report_api';
 
-	protected Serializer $serializer;
-
 	public function __construct(
 		protected ReportManager $reportManager,
-	) {
-		$encoders = [new JsonEncoder()];
-		$normalizers = [new ObjectNormalizer()];
-		$this->serializer = new Serializer($normalizers, $encoders);
-	}
+	) {}
 
     #[Route('/report', name: self::ROUTE_CREATE_REPORT, methods: ['POST'])]
     public function createReport(Request $request): JsonResponse
     {
-		$date = DateTimeImmutable::createFromFormat('Y.m.d-H:i:s', $request->get('time'));
+		$timeFormat = 'Y.m.d-H:i:s';
 
-		$report = $request->get('report');
-		$reportDto = $this->serializer->deserialize($report, ReportDto::class, 'json');
+		$date = DateTimeImmutable::createFromFormat($timeFormat, $request->get('time'));
+
+		if($date === false) {
+			throw new BadRequestException(sprintf('time must be in the format: %s', $timeFormat));
+		}
+
+		$reportJson = $request->get('report');
+
+		$reportDto = $this->reportManager->deserialize($reportJson);
 
 		$this->reportManager->save($reportDto);
 

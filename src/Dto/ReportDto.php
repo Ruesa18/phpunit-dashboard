@@ -13,7 +13,7 @@ class ReportDto extends AbstractDto {
 	/**
 	 * @var TestsuiteDto[]
 	 */
-	public array $testsuites;
+	public array $testsuites = [];
 
 	/**
 	 * @param int $testCount

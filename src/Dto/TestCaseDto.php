@@ -4,13 +4,13 @@ namespace App\Dto;
 
 class TestCaseDto extends AbstractDto {
 	public string $name;
-	public ?string $class;
-	public ?string $className;
-	public ?string $file;
-	public ?int $line;
+	public ?string $class = null;
+	public ?string $className = null;
+	public ?string $file = null;
+	public ?int $line = null;
 	public int $assertionCount;
 	public float $time;
-	public ?FailureDto $failure;
+	public ?FailureDto $failure = null;
 
 	/**
 	 * @param string $name

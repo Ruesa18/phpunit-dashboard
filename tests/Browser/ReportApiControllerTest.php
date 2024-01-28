@@ -2,17 +2,16 @@
 
 namespace App\Tests\Browser;
 
-use App\Controller\ReportApiController;
+use App\Dto\ReportDto;
 use DateTime;
-use Symfony\Component\Routing\Router;
-use Symfony\Component\Routing\RouterInterface;
 
 class ReportApiControllerTest extends AbstractBrowserTest {
 
 	public function testCreateReport(): void {
 		$dateTime = new DateTime();
 		$postdata = [
-			'time' => $dateTime->format('Y.m.d-H:i:s')
+			'time' => $dateTime->format('Y.m.d-H:i:s'),
+			'report' => json_encode($this->getTestReportDto(), true),
 		];
 
 		$this->browser()
@@ -32,9 +31,27 @@ class ReportApiControllerTest extends AbstractBrowserTest {
 		];
 
 		$this->browser()
-			->post('/api/report', ['post' => $postdata])
-			->saveSource('test_create_report_negative.html')
-			->assertStatus(500)
+			->post(
+				'/api/report',
+				['post' => $postdata]
+			)
+			->assertStatus(400)
 		;
+	}
+
+	private function getTestReportDto(): ReportDto {
+		$reportDto = new ReportDto();
+
+		$reportDto
+			->setTime(0.0)
+			->setTestCount(0)
+			->setSkipCount(0)
+			->setFailureCount(0)
+			->setWarningCount(0)
+			->setErrorCount(0)
+			->setAssertionCount(0)
+		;
+
+		return $reportDto;
 	}
 }
