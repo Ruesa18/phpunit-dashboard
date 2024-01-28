@@ -15,7 +15,7 @@ class TestsuiteDto extends AbstractDto {
 	/**
 	 * @var TestClassDto[]
 	 */
-	public array $testClasses;
+	public array $testClasses = [];
 
 	/**
 	 * @param string $name

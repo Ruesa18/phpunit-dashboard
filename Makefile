@@ -20,8 +20,6 @@ db_test:
 	bin/console doctrine:database:create --if-not-exists -n --env=test
 	bin/console doctrine:schema:drop --full-database --force --env=test
 	bin/console doctrine:migrations:sync-metadata-storage --env=test
-	bin/console doctrine:migrations:version --add araise\\SearchBundle\\Migrations\\Version20220602150539 --no-interaction --env=test
-	bin/console doctrine:migrations:version --add araise\\TableBundle\\Migrations\\Version20220622145409 --no-interaction --env=test
 	bin/console doctrine:migrations:migrate -n --env=test
 	bin/console doctrine:fixtures:load -n --append --env=test
 	bin/console araise:search:populate --env=test

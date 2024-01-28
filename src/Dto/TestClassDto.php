@@ -13,7 +13,7 @@ class TestClassDto extends AbstractDto {
 	public int $skipCount;
 	public float $time;
 	/** @var TestCaseDto[] */
-	public array $testCases;
+	public array $testCases = [];
 
 	/**
 	 * @param string $name

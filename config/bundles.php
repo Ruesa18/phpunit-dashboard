@@ -21,4 +21,5 @@ return [
     araise\SearchBundle\araiseSearchBundle::class => ['all' => true],
     araise\TableBundle\araiseTableBundle::class => ['all' => true],
     araise\CrudBundle\araiseCrudBundle::class => ['all' => true],
+    Zenstruck\Foundry\ZenstruckFoundryBundle::class => ['dev' => true, 'test' => true],
 ];
