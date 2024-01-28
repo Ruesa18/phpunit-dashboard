@@ -1,5 +1,59 @@
-wwd.app_entity_user.title: User
-wwd.app_entity_user.title_plural: User
-wwd.app_entity_user.block.base: Base
-wwd.app_entity_user.property.email: email
-wwd.app_entity_user.property.password: password
+wwd.app_entity_user.title: Benutzer
+wwd.app_entity_user.title_plural: Benutzer
+wwd.app_entity_user.block.base: Info
+wwd.app_entity_user.property.email: Email
+wwd.app_entity_user.property.password: Passwort
+wwd.app_entity_report.title: Report
+wwd.app_entity_report.title_plural: Reports
+wwd.app_entity_report.block.base: Grunddaten
+wwd.app_entity_report.property.testCount: Anzahl Tests
+wwd.app_entity_report.property.assertionCount: Anzahl Assertions
+wwd.app_entity_report.property.errorCount: Anzahl Errors
+wwd.app_entity_report.property.warningCount: Anzahl Warnings
+wwd.app_entity_report.property.failureCount: Anzahl Failures
+wwd.app_entity_report.property.skipCount: Anzahl Skips
+wwd.app_entity_report.property.time: Zeit
+wwd.app_entity_report.property.executionTimestamp: Ausgeführt am
+wwd.app_entity_report.property.testsuites: Testsuites
+wwd.app_entity_failure.title: Failure
+wwd.app_entity_failure.title_plural: Failures
+wwd.app_entity_failure.block.base: Grunddaten
+wwd.app_entity_failure.property.type: Typ
+wwd.app_entity_failure.property.content: Inhalt
+wwd.app_entity_test_case.title: Test Case
+wwd.app_entity_test_case.title_plural: Test Cases
+wwd.app_entity_test_case.block.base: Grunddaten
+wwd.app_entity_test_case.property.name: Name
+wwd.app_entity_test_case.property.class: Klasse
+wwd.app_entity_test_case.property.className: Klassenname
+wwd.app_entity_test_case.property.file: Datei
+wwd.app_entity_test_case.property.line: Zeile
+wwd.app_entity_test_case.property.assertionCount: Anzahl Assertions
+wwd.app_entity_test_case.property.time: Zeit
+wwd.app_entity_test_case.property.failure: Failure
+wwd.app_entity_test_class.title: Test Class
+wwd.app_entity_test_class.title_plural: Test Classes
+wwd.app_entity_test_class.block.base: Grunddaten
+wwd.app_entity_test_class.property.name: Name
+wwd.app_entity_test_class.property.file: Datei
+wwd.app_entity_test_class.property.testCount: Anzahl Tests
+wwd.app_entity_test_class.property.assertionCount: Anzahl Assertions
+wwd.app_entity_test_class.property.errorCount: Anzahl Errors
+wwd.app_entity_test_class.property.warningCount: Anzahl Warnings
+wwd.app_entity_test_class.property.failureCount: Anzahl Failures
+wwd.app_entity_test_class.property.skipCount: Anzahl Skips
+wwd.app_entity_test_class.property.time: Zeit
+wwd.app_entity_test_class.property.testCases: Test Cases
+wwd.app_entity_testsuite.title: Testsuite
+wwd.app_entity_testsuite.title_plural: Testsuites
+wwd.app_entity_testsuite.block.base: Grunddaten
+wwd.app_entity_testsuite.property.name: Name
+wwd.app_entity_testsuite.property.testCount: Anzahl Tests
+wwd.app_entity_testsuite.property.assertionCount: Anzahl Assertions
+wwd.app_entity_testsuite.property.errorCount: Anzahl Errors
+wwd.app_entity_testsuite.property.warningCount: Anzahl Warnings
+wwd.app_entity_testsuite.property.failureCount: Anzahl Failures
+wwd.app_entity_testsuite.property.skipCount: Anzahl Skips
+wwd.app_entity_testsuite.property.time: Zeit
+wwd.app_entity_testsuite.property.testClasses: Test Classes
+menu.baseData: Grunddaten
