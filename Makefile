@@ -6,7 +6,7 @@ help:
 install:
 	composer install
 	make db
-	yarn install
+	npm install
 	make encore
 
 db:
@@ -25,7 +25,7 @@ db_test:
 	bin/console araise:search:populate --env=test
 
 encore:
-	yarn encore dev
+	npm run dev
 
 test:
 	make db_test

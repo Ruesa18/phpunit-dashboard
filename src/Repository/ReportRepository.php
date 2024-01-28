@@ -59,4 +59,18 @@ class ReportRepository extends ServiceEntityRepository
 			->getSingleScalarResult()
 		;
     }
+
+	/**
+	 * @param int $amount
+	 * @return Report[]
+	 */
+	public function getLastFewReports(int $amount = 10): array {
+		$reports = $this->createQueryBuilder('r')
+			->orderBy('r.executionTimestamp', 'DESC')
+			->setMaxResults($amount)
+			->getQuery()
+			->getResult()
+		;
+		return array_reverse($reports);
+	}
 }

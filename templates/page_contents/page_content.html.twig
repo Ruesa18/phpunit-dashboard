@@ -1,0 +1,17 @@
+<div class="page-content {{ options.size }}">
+	{% block main %}
+
+		{% if options.title != false %}
+			{% block title %}
+				<h3 class="whatwedo-utility-heading-3 mb-1">{{ options.title }}</h3>
+			{% endblock %}
+		{% endif %}
+
+		{% block content %}
+			<p>{{ options.content }}</p>
+		{% endblock %}
+
+		{% block additional %}
+		{% endblock %}
+	{% endblock %}
+</div>
