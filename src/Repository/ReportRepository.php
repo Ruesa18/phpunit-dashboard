@@ -4,6 +4,8 @@ namespace App\Repository;
 
 use App\Entity\Report;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\NonUniqueResultException;
+use Doctrine\ORM\NoResultException;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -45,4 +47,16 @@ class ReportRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+
+	/**
+	 * @throws NonUniqueResultException
+	 * @throws NoResultException
+	 */
+	public function countAll(): int {
+		return $this->createQueryBuilder('r')
+			->select('COUNT(r.id)')
+			->getQuery()
+			->getSingleScalarResult()
+		;
+    }
 }

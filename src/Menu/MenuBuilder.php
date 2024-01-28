@@ -2,6 +2,7 @@
 
 namespace App\Menu;
 
+use App\Controller\DashboardController;
 use App\Definition\FailureDefinition;
 use App\Definition\ReportDefinition;
 use App\Definition\TestCaseDefinition;
@@ -15,7 +16,7 @@ class MenuBuilder extends \araise\CrudBundle\Menu\MenuBuilder {
 		$menu = $this->factory->createItem('');
 		$menu->addChild('Dashboard', [
 			self::OPT_LABEL => 'araise_crud.dashboard',
-			self::OPT_ROUTE => 'araise_crud_dashboard',
+			self::OPT_ROUTE => DashboardController::ROUTE_DASHBOARD,
 			self::OPT_ATTR => [
 				self::OPT_ATTR_ICON => 'house-door',
 			],
