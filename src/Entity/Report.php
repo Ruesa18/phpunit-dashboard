@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\ReportRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ReportRepository::class)]
@@ -39,9 +40,13 @@ class Report
     #[ORM\OneToMany(mappedBy: 'report', targetEntity: Testsuite::class, cascade: ['persist'])]
     private Collection $testsuites;
 
+    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    private ?\DateTimeInterface $executionTimestamp = null;
+
     public function __construct()
     {
         $this->testsuites = new ArrayCollection();
+		$this->executionTimestamp = new \DateTime();
     }
 
     public function getId(): ?int
@@ -166,6 +171,18 @@ class Report
                 $testsuite->setReport(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getExecutionTimestamp(): ?\DateTimeInterface
+    {
+        return $this->executionTimestamp;
+    }
+
+    public function setExecutionTimestamp(\DateTimeInterface $executionTimestamp): static
+    {
+        $this->executionTimestamp = $executionTimestamp;
 
         return $this;
     }

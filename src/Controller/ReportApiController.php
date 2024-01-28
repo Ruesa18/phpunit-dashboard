@@ -25,8 +25,12 @@ class ReportApiController extends AbstractController
     {
 		$timeFormat = 'Y.m.d-H:i:s';
 
-		$date = DateTimeImmutable::createFromFormat($timeFormat, $request->get('time'));
+		$timeParameter = $request->get('time');
+		if($timeParameter === null) {
+			throw new BadRequestException(sprintf('time must be in the format: %s', $timeFormat));
+		}
 
+		$date = DateTimeImmutable::createFromFormat($timeFormat, $timeParameter);
 		if($date === false) {
 			throw new BadRequestException(sprintf('time must be in the format: %s', $timeFormat));
 		}

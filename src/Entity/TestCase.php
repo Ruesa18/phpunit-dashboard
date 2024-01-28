@@ -34,7 +34,7 @@ class TestCase
     #[ORM\Column]
     private ?float $time = null;
 
-    #[ORM\OneToOne(inversedBy: 'testCase', cascade: ['persist', 'remove'])]
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
     private ?Failure $failure = null;
 
     #[ORM\ManyToOne(inversedBy: 'testCases')]
@@ -160,4 +160,8 @@ class TestCase
 
         return $this;
     }
+
+	public function __toString(): string {
+		return sprintf('%s::%s', $this->getClass(), $this->getName());
+	}
 }
