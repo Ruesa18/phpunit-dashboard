@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12ee20745ec91bff8aa75094471b6645",
+    "content-hash": "a28e3bf6a821fa4e007de3f86677bb44",
     "packages": [
         {
             "name": "araise/core-bundle",
-            "version": "v1.2.0",
+            "version": "v1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/araise-dev/CoreBundle.git",
-                "reference": "972916b3f95e46ba15c4a34b9214287ace4ce859"
+                "reference": "d0584cae85e69a24eb722d3e74f44bce88c834f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/araise-dev/CoreBundle/zipball/972916b3f95e46ba15c4a34b9214287ace4ce859",
-                "reference": "972916b3f95e46ba15c4a34b9214287ace4ce859",
+                "url": "https://api.github.com/repos/araise-dev/CoreBundle/zipball/d0584cae85e69a24eb722d3e74f44bce88c834f6",
+                "reference": "d0584cae85e69a24eb722d3e74f44bce88c834f6",
                 "shasum": ""
             },
             "require": {
@@ -70,22 +70,22 @@
             ],
             "support": {
                 "issues": "https://github.com/araise-dev/CoreBundle/issues",
-                "source": "https://github.com/araise-dev/CoreBundle/tree/v1.2.0"
+                "source": "https://github.com/araise-dev/CoreBundle/tree/v1.2.4"
             },
-            "time": "2024-10-08T11:14:18+00:00"
+            "time": "2024-12-16T16:10:27+00:00"
         },
         {
             "name": "araise/crud-bundle",
-            "version": "v1.2.1",
+            "version": "v1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/araise-dev/CrudBundle.git",
-                "reference": "5004bf1eaba15745ecde375fe3082071d4893949"
+                "reference": "29ca96a1bf7c1bc9037bce0753dbfe6db8d237d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/araise-dev/CrudBundle/zipball/5004bf1eaba15745ecde375fe3082071d4893949",
-                "reference": "5004bf1eaba15745ecde375fe3082071d4893949",
+                "url": "https://api.github.com/repos/araise-dev/CrudBundle/zipball/29ca96a1bf7c1bc9037bce0753dbfe6db8d237d5",
+                "reference": "29ca96a1bf7c1bc9037bce0753dbfe6db8d237d5",
                 "shasum": ""
             },
             "require": {
@@ -159,9 +159,9 @@
             ],
             "support": {
                 "issues": "https://github.com/araise-dev/CrudBundle/issues",
-                "source": "https://github.com/araise-dev/CrudBundle/tree/v1.2.1"
+                "source": "https://github.com/araise-dev/CrudBundle/tree/v1.2.5"
             },
-            "time": "2024-11-27T16:36:39+00:00"
+            "time": "2024-12-09T19:45:48+00:00"
         },
         {
             "name": "araise/search-bundle",
@@ -227,16 +227,16 @@
         },
         {
             "name": "araise/table-bundle",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/araise-dev/TableBundle.git",
-                "reference": "75d451fe101bc346e2346ed53849965dfef46548"
+                "reference": "7e39fa78a76391188ccd8ca8584b71347c6d03e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/araise-dev/TableBundle/zipball/75d451fe101bc346e2346ed53849965dfef46548",
-                "reference": "75d451fe101bc346e2346ed53849965dfef46548",
+                "url": "https://api.github.com/repos/araise-dev/TableBundle/zipball/7e39fa78a76391188ccd8ca8584b71347c6d03e7",
+                "reference": "7e39fa78a76391188ccd8ca8584b71347c6d03e7",
                 "shasum": ""
             },
             "require": {
@@ -296,9 +296,9 @@
             ],
             "support": {
                 "issues": "https://github.com/araise-dev/TableBundle/issues",
-                "source": "https://github.com/araise-dev/TableBundle/tree/v1.2.2"
+                "source": "https://github.com/araise-dev/TableBundle/tree/v1.2.3"
             },
-            "time": "2024-11-26T16:51:00+00:00"
+            "time": "2024-12-04T15:25:39+00:00"
         },
         {
             "name": "doctrine/annotations",
