@@ -1,0 +1,5 @@
+name: phpunit-dashboard
+services:
+    - mariadb
+containers:
+    web: ~
