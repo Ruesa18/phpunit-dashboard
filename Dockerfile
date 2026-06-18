@@ -4,7 +4,7 @@ FROM whatwedo/symfony:v2.7 as base
 # Development stage (depencencies and configuration used in development only)
 FROM base as dev
 
-RUN apk add --no-cache make mysql-client npm php$PHP_VERSION-xdebug yarn
+RUN apk add --no-cache make mysql-client npm php$PHP_VERSION-xdebug
 
 COPY ./docker/dev/etc /etc
 
