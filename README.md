@@ -1,6 +1,10 @@
 # PhpUnit Dashboard
 This dashboard enables you to examine the output of a phpunit run by reading the report xml file.
 
+## Local Dev Setup
+The easiest way to run this project locally is to use [dde](https://dde.sh).
+If you really need to, you should also be able to run it with plain `docker compose` - but this is neither tested nor supported.
+
 ## Testing
 
 ### Unit Tests

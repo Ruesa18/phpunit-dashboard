@@ -1,6 +1,5 @@
 
 .idea
-.dde
 
 ###> symfony/framework-bundle ###
 /.env.local
